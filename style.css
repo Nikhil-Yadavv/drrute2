@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header style */
+.header{
+    background: url(./assets/v2.jpg);
+    background-size: cover;
+    background-position:center; 
+    background-blend-mode: multiply;  
+}
+.content1{
+    margin-top: 25px;
+    width: 18vw;
+    text-align: right;
+}
+.content1 h2{
+    color: #FFCF3E;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    display: flex;
+    margin-top: -10px;
+    justify-content: flex-end;
+}
+.logo h3{
+    font-family: 'Seaweed Script', cursive;
+    color: black;
+}
+.logo img{
+    width: 90px;
+    height: 35px;
+}
+.content2{
+    margin: 300px 0px 70px 100px;
+}
+.content2 h1{
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 60px;
+}
+.content2 h1 span{
+    color: #FFCF3E;
+    font-size: 70px;
+}
+
+/* place css */
+
+.place{
+    background: url(./assets/z1.webp);
+    background-size: cover;
+    background-position:center; 
+    background-blend-mode: multiply;  
+}
+.place h1{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 52px;
+    text-align: center;
+    padding-top: 70px;
+}
+.place h3{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: -8px;
+}
+.place1{
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.3);
+}
+.place1 h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    padding: 25px;
+}
+.place2{
+    height: 100%;
+}
+.place2 h2{
+    padding-top: 45px;
+}
+.pic{
+    position: absolute;
+    height: 30%;
+    top: 25px;
+    left: -15px;
+    
+}
+.rel{
+    position: relative;
+    opacity: 1;
+}
+
+/* work css */
+.work{
+    background-color: black;
+}
+.work h1{
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    font-weight: 900;
+    margin-top: 60px;
+}
+.work h3{
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    font-weight: 700;
+    margin: 25px 0px 0px 20px;
+}
+.work ul li{
+    color: white;
+    margin: 18px 0px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.pic1{
+    width: 100%;
+    height: 80%;
+    margin-top: 120px;
+}
+
+/* just css */
+
+.just{
+    background: url(./assets/z5.jpg);
+    background-size: cover;
+    background-position:center; 
+    background-blend-mode: multiply;
+}
+.content3{
+    margin: 600px 0px 15px 60vw;
+}
+.content3 h2{
+    color: black;
+    font-weight: 900;
+}
+.content3 h4{
+    color: black;
+    font-weight: 700;
+}
+@media (min-width:1400px) {
+    .content3{
+        margin: 600px 0px 15px 43vw;
+    }
+}
+
+/* open css */
+
+.open{
+    background-color: black;
+    padding: 100px 0px 60px 0px;
+}
+.content4{
+    text-align: center;
+}
+.content4 h1{
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+}
+.content4 h4{
+    color: white;
+    font-weight: 500;
+    line-height: 35px;
+}
+.content4 p{
+    color: white;
+}
+.content4 h4 span{
+    color: #FFCF3E;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+/* work css */
+
+.book{
+    background: url(./assets/z2.webp);
+    background-size: cover;
+    background-position:center; 
+    background-blend-mode: multiply;
+}
+.content5{
+    background-color: rgba(0,0,0,0.4);
+    padding-left: 30px !important;
+    padding-bottom: 45px;
+}
+.book h1{
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    font-weight: 900;
+    margin-top: 40px;
+}
+.book h3{
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    font-weight: 700;
+    margin: 25px 0px 0px 20px;
+}
+.book ul li{
+    color: white;
+    margin: 18px 0px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.book h4{
+    margin-top: 100px;
+    color: white;
+}
+.book a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/* market css */
+
+.market{
+    background-color: black;
+    padding: 100px 0px 10px 0px;
+}
+.content6{
+    text-align: center;
+}
+.content6 h1{
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+}
+.content6 h4{
+    color: white;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.content6 p{
+    color: white;
+    margin-top: 30px;
+    font-weight: 500;
+}
+.content6 h5 span{
+    color: #FFCF3E;
+    font-weight: 900;
+    font-size: 35px;
+}
+.logo2{
+    display: flex;
+    margin-top: -10px;
+    justify-content: center;
+}
+.logo2 h3{
+    font-family: 'Seaweed Script', cursive;
+    color: white;
+}
+.logo2 img{
+    width: 90px;
+    height: 35px;
+}
+
+/* find css */
+
+.find{
+    background: url(./assets/z3.webp);
+    background-size: cover;
+    background-position:center; 
+    background-blend-mode: multiply;
+}
+.find h2{
+    font-weight: 700;
+    color: black;
+    margin-top: 100px;
+}
+.find ul li{
+    color: black;
+    margin: 18px 0px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+/* building css */
+
+.building{
+    background-color: black;
+    padding: 120px 0px 100px 0px;
+}
+.content8 h1{
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+}
+.building h3{
+    text-align: center;
+    background-color: #FFCF3E;
+    color: black;
+    font-size: 18px;
+    margin: 30px 41vw 0px 41vw;
+    padding: 10px;
+}
+
+/* hair css */
+
+.hair{
+    background: url(./assets/v4.jpg);
+    background-size: cover;
+    background-position:center; 
+    background-blend-mode: multiply; 
+}
+.hair h1{
+    color: black;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 500px 0px 30px 50px;
+}
+.hair h3{
+    color: black;
+    font-weight: 700;
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+
+/* good css */
+
+.good{
+    background-color: black;
+    padding: 100px 0px 120px 0px;
+}
+.content8 h1{
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+}
+.good h3{
+    text-align: center;
+    background-color: #FFCF3E;
+    color: black;
+    font-size: 18px;
+    margin: 30px 41vw 0px 41vw;
+    padding: 10px;
+}
+
+
+/* land css */
+
+.land{
+    background: url(./assets/v1.jpg);
+    background-size: cover;
+    background-position:center; 
+    background-blend-mode: multiply; 
+}
+.land h3{
+    color: black;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 500px 0px 30px 0px;
+    text-align: center;
+}
+.land h3 span{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+/* footer section */
+
+.footer{
+    background-color: black;
+    padding-bottom: 150px;
+}
+.content11{
+    margin-top: 180px;
+    text-align: right;
+}
+.content11 h2{
+    color: #FFCF3E;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+}
+.logo1{
+    display: flex;
+    justify-content: flex-end;
+}
+.logo1 h3{
+    font-family: 'Seaweed Script', cursive;
+    color: white;
+    font-size: 50px;
+}
+.logo1 img{
+    width: 140px;
+    height: 60px;
+}
+.content12{
+    margin-top: 140px !important;
+    text-align: left;
+}
+.content12 h2{
+    color: white;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    line-height: 50px;
+}
+.content12 h5{
+    color: white;
+    margin-top: 20px;
+}
+.footer .h2{
+    margin-top: 250px;
+    text-align: center;
+    color: white;
+}
+.footer .h5{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
