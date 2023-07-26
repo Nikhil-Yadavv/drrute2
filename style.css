@@ -20,7 +20,6 @@
 .video-container {
     overflow: hidden;
     position: relative;
-    height: 100vh;
   }
   
   .video-container video {
@@ -76,7 +75,7 @@
 
 @media (max-width:900px) {
     .content2{
-       margin-top: 80vh;
+       margin-top: 100vh !important;
     }
 }
 
@@ -174,14 +173,10 @@
 
 /* just css */
 
-.just{
-    background: url(./assets/z5.jpg);
-    background-size: cover;
-    background-position:center; 
-    background-blend-mode: multiply;
-}
+
 .content3{
-    margin: 600px 0px 10px 60vw;
+    margin: 500px 0px 10px 60vw;
+    position: relative;
 }
 .content3 h2{
     color: black;
@@ -355,24 +350,21 @@
 
 /* hair css */
 
-.hair{
-    background: url(./assets/ve4.mp4);
-    background-size: cover;
-    background-position:center; 
-    background-blend-mode: multiply; 
-}
+
 .hair h1{
     color: black;
     font-weight: 900;
     font-size: 45px;
-    margin: 500px 0px 10px 50px;
+    margin: 600px 0px 10px 50px;
     font-family: 'Andasia', Arial, sans-serif;
+    position: relative;
 }
 .hair h3{
     color: black;
     font-weight: 700;
     margin-left: 70px;
     margin-bottom: 50px;
+    position: relative;
 }
 
 /* good css */
@@ -399,23 +391,19 @@
 
 /* land css */
 
-.land{
-    background: url(./assets/ve1.mp4);
-    background-size: cover;
-    background-position:center; 
-    background-blend-mode: multiply; 
-}
 .land h3{
     color: black;
     font-size: 40px;
     font-weight: 900;
-    margin: 600px 0px 30px 0px;
+    margin: 800px 0px 30px 0px;
     text-align: center;
+    position: relative;
 }
 .land h3 span{
     color: black;
     font-weight: 900;
     font-size: 40px;
+    position: relative;
 }
 
 /* footer section */
@@ -478,45 +466,75 @@
     .content1{
         margin-left: 20px;
     }
-    /* .video-container .caption {
-        height: 120vh;
-      }
       .content2{
-        margin-top: 50vh !important;
+        margin-top: 55vh !important;
         margin-left: 50px;
         margin-right: 50px;
     }
     .content2 h1{
-        font-size: 60px;
-        line-height: 65px;
+        font-size: 80px;
+        line-height: 100px;
+        margin-bottom: 150px;
     }
     .content2 h1 span{
-        font-size: 67px;
+        font-size: 88px;
     }
     .content1{
-        width: 30vw;
+        margin-top: 70px;
+        width: 50vw;
+        padding-left: 0px;
     }
     .content1 h2{
-        font-size: 45px;
-        line-height: 50px;
+        font-size: 70px;
+        line-height: 80px;
     }
     .logo h3{
-        font-size: 35px;
+        font-size: 70px;
     }
     .logo img{
-        width: 110px;
-        height: 50px;
-    } */
+        width: 180px;
+        height: 90px;
+    }
+    .land h3{
+        margin-top: 50vh;
+        font-size:50px;
+    }
+    .hair h1{
+        margin-top: 50vh;
+        font-size: 60px;
+    }
+    .hair h3{
+        font-size: 50px;
+    }
+    .content3{
+        margin-top: 50vh;
+        
+    }
 }
 
 @media (min-width:1400px) {
-    /* .content3{
-        margin: 600px 0px 15px 43vw;
-    }
     .content1{
-        margin-left: -120px;
+        margin: 20px 130px;
     }
-    .content1 h2{
+    .content2{
+        margin: 40vh 200px 50px 350px;
+    }
+    .footer h5{
         font-size: 40px;
-    } */
+    }
+    .hair h1{
+        margin: 600px 150px 20px 350px;
+    }
+    .hair h3{
+        margin: 0px 150px 20px 350px;
+    }
+    .book ul li{
+        font-size: 30px;
+    }
+    .market h4{
+        font-size: 30px;
+    }
+    .market p{
+        font-size: 30px;
+    }
 }
