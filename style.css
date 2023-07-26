@@ -510,6 +510,9 @@
         margin-top: 50vh;
         
     }
+    .footer h5{
+        font-size: 40px;
+    }
 }
 
 @media (min-width:1400px) {
