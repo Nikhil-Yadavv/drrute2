@@ -2,23 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap');
-*{
+@font-face {
+    font-family: 'Andasia';
+    src: url('path-to-your-font-folder/andasia.woff2') format('woff2'),
+         url('path-to-your-font-folder/andasia.woff') format('woff');
+  }
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+  @import url('./fonts/agrandir.woff2');
+    
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header style */
-.header{
-    background: url(./assets/v2.jpg);
-    background-size: cover;
-    background-position:center; 
-    background-blend-mode: multiply;  
-}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
 .content1{
     margin-top: 25px;
     width: 18vw;
     text-align: right;
+    position: relative;
 }
 
 .content1 h2{
@@ -40,19 +57,30 @@
     height: 35px;
 }
 .content2{
-    margin: 300px 0px 70px 100px;
+    position: relative;
+    margin: 40vh 0 50px 100px;
 }
 .content2 h1{
-    font-family: 'Yantramanav', sans-serif;
+    font-family: 'Agrandir', sans-serif;
     color: white;
     font-weight: 900;
-    font-size: 62px;
+    font-size: 50px;
     line-height: 60px;
+    letter-spacing: -2px;
 }
 .content2 h1 span{
     color: #FFCF3E;
-    font-size: 70px;
+    font-size: 55px;
 }
+
+
+@media (max-width:900px) {
+    .content2{
+       margin-top: 80vh;
+    }
+}
+
+
 
 /* place css */
 
@@ -68,31 +96,33 @@
     font-size: 52px;
     line-height: 52px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 160px;
 }
 .place h3{
-    font-family: 'Yantramanav', sans-serif;
+    font-family: 'Andasia', Arial, sans-serif;
     font-weight: 900;
     text-align: center;
-    margin-top: -8px;
+    /* margin-top: -8px; */
 }
 .place1{
     text-align: center;
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
 }
 .place1 h2{
     display: flex;
     text-align: center;
     justify-content: center;
     color: black;
-    padding: 25px;
+    padding: 32px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
 }
 .place2{
     height: 100%;
 }
 .place2 h2{
-    padding-top: 45px;
+    padding-top: 48px;
 }
 .pic{
     position: absolute;
@@ -107,24 +137,31 @@
 }
 
 /* work css */
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('path-to-your-font-folder/ttfirsneue.woff2') format('woff2'),
+         url('path-to-your-font-folder/ttfirsneue.woff') format('woff');
+    /* Add more font formats if needed */
+  }
 .work{
     background-color: black;
+    padding-bottom: 90px;
 }
 .work h1{
-    font-family: 'Yantramanav', sans-serif;
+    font-family: 'TT Firs Neue', Arial, sans-serif;
     color: white;
     font-weight: 900;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 .work h3{
     font-family: 'Yantramanav', sans-serif;
     color: white;
-    font-weight: 700;
-    margin: 25px 0px 0px 20px;
+    font-weight: 900;
+    margin: 40px 0px 0px 20px;
 }
 .work ul li{
     color: white;
-    margin: 18px 0px;
+    margin: 25px 0px;
     font-size: 1.4rem;
     line-height: 30px;
     margin-left: 10px;
@@ -144,7 +181,7 @@
     background-blend-mode: multiply;
 }
 .content3{
-    margin: 600px 0px 15px 60vw;
+    margin: 600px 0px 10px 60vw;
 }
 .content3 h2{
     color: black;
@@ -154,17 +191,13 @@
     color: black;
     font-weight: 700;
 }
-@media (min-width:1400px) {
-    .content3{
-        margin: 600px 0px 15px 43vw;
-    }
-}
+
 
 /* open css */
 
 .open{
     background-color: black;
-    padding: 100px 0px 60px 0px;
+    padding: 125px 0px 80px 0px;
 }
 .content4{
     text-align: center;
@@ -188,34 +221,35 @@
     font-size: 35px;
 }
 
-/* work css */
+/* book css */
 
 .book{
     background: url(./assets/z2.webp);
     background-size: cover;
     background-position:center; 
     background-blend-mode: multiply;
+    padding-top: 30px;
 }
 .content5{
     background-color: rgba(0,0,0,0.4);
     padding-left: 30px !important;
-    padding-bottom: 45px;
+    padding-bottom: 80px;
 }
 .book h1{
     font-family: 'Yantramanav', sans-serif;
     color: white;
     font-weight: 900;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .book h3{
     font-family: 'Yantramanav', sans-serif;
     color: white;
-    font-weight: 700;
-    margin: 25px 0px 0px 20px;
+    font-weight: 900;
+    margin: 35px 0px 0px 20px;
 }
 .book ul li{
     color: white;
-    margin: 18px 0px;
+    margin: 30px 0px;
     font-size: 1.4rem;
     line-height: 30px;
     margin-left: 10px;
@@ -230,7 +264,9 @@
     font-size: 25px;
     font-weight: 700;
 }
-
+.anchor{
+    margin-top: 100px !important;
+}
 
 /* market css */
 
@@ -284,13 +320,13 @@
     background-blend-mode: multiply;
 }
 .find h2{
-    font-weight: 700;
+    font-weight: 800;
     color: black;
     margin-top: 100px;
 }
 .find ul li{
     color: black;
-    margin: 18px 0px;
+    margin: 33px 0px;
     font-size: 1.4rem;
     line-height: 30px;
     margin-left: 10px;
@@ -300,7 +336,7 @@
 
 .building{
     background-color: black;
-    padding: 120px 0px 100px 0px;
+    padding: 180px 0px 150px 0px;
 }
 .content8 h1{
     color: white;
@@ -313,14 +349,14 @@
     background-color: #FFCF3E;
     color: black;
     font-size: 18px;
-    margin: 30px 41vw 0px 41vw;
+    margin: 60px 41vw 0px 41vw;
     padding: 10px;
 }
 
 /* hair css */
 
 .hair{
-    background: url(./assets/v4.jpg);
+    background: url(./assets/ve4.mp4);
     background-size: cover;
     background-position:center; 
     background-blend-mode: multiply; 
@@ -328,8 +364,9 @@
 .hair h1{
     color: black;
     font-weight: 900;
-    font-size: 50px;
-    margin: 500px 0px 30px 50px;
+    font-size: 45px;
+    margin: 500px 0px 10px 50px;
+    font-family: 'Andasia', Arial, sans-serif;
 }
 .hair h3{
     color: black;
@@ -342,7 +379,7 @@
 
 .good{
     background-color: black;
-    padding: 100px 0px 120px 0px;
+    padding: 180px 0px 150px 0px;
 }
 .content8 h1{
     color: white;
@@ -363,7 +400,7 @@
 /* land css */
 
 .land{
-    background: url(./assets/v1.jpg);
+    background: url(./assets/ve1.mp4);
     background-size: cover;
     background-position:center; 
     background-blend-mode: multiply; 
@@ -371,8 +408,8 @@
 .land h3{
     color: black;
     font-size: 40px;
-    font-weight: 400;
-    margin: 500px 0px 30px 0px;
+    font-weight: 900;
+    margin: 600px 0px 30px 0px;
     text-align: center;
 }
 .land h3 span{
@@ -395,7 +432,7 @@
     color: #FFCF3E;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
-    font-size: 55px;
+    font-size: 60px;
 }
 .logo1{
     display: flex;
@@ -441,4 +478,45 @@
     .content1{
         margin-left: 20px;
     }
+    /* .video-container .caption {
+        height: 120vh;
+      }
+      .content2{
+        margin-top: 50vh !important;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .content2 h1{
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .content2 h1 span{
+        font-size: 67px;
+    }
+    .content1{
+        width: 30vw;
+    }
+    .content1 h2{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .logo h3{
+        font-size: 35px;
+    }
+    .logo img{
+        width: 110px;
+        height: 50px;
+    } */
+}
+
+@media (min-width:1400px) {
+    /* .content3{
+        margin: 600px 0px 15px 43vw;
+    }
+    .content1{
+        margin-left: -120px;
+    }
+    .content1 h2{
+        font-size: 40px;
+    } */
 }
