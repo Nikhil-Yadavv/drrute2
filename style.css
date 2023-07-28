@@ -8,7 +8,18 @@
          url('path-to-your-font-folder/andasia.woff') format('woff');
   }
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
-  @import url('./fonts/agrandir.woff2');
+  @font-face {
+    font-family: 'Agrandir'; /* Name to reference the font */
+    src: url('./fonts/Agrandir/Agrandir-WideBlackItalic.otf') format('woff2'),
+         url('fonts/agrandir.woff') format('woff'); 
+    
+  }
+  @font-face {
+    font-family: 'Andasia';
+    src: url('./fonts/Agrandir/Andasia-OXA3.otf') format('woff2'), /* Modern Browsers */
+         url('./fonts/din-studio-andasia.zip/Andasia-OXA3.otf') format('woff'),   /* Legacy Browsers */
+         url('./fonts/din-studio-andasia.zip/Andasia-OXA3.otf') format('truetype'); /* Legacy Browsers that don't support WOFF */
+  }
     
   *{
     margin: 0;
@@ -48,8 +59,9 @@
     justify-content: flex-end;
 }
 .logo h3{
-    font-family: 'Seaweed Script', cursive;
+    font-family: 'Andasia', sans-serif;
     color: black;
+    font-weight: 700;
 }
 .logo img{
     width: 90px;
@@ -65,11 +77,10 @@
     font-weight: 900;
     font-size: 50px;
     line-height: 60px;
-    letter-spacing: -2px;
 }
 .content2 h1 span{
     color: #FFCF3E;
-    font-size: 55px;
+    font-size: 58px;
 }
 
 
@@ -90,18 +101,17 @@
     background-blend-mode: multiply;  
 }
 .place h1{
-    font-family: 'Yantramanav', sans-serif;
+    font-family: 'Agrandir', sans-serif;
     font-weight: 900;
-    font-size: 52px;
+    font-size: 35px;
     line-height: 52px;
     text-align: center;
     padding-top: 160px;
 }
 .place h3{
-    font-family: 'Andasia', Arial, sans-serif;
+    font-family: 'Agrandir', sans-serif;
     font-weight: 900;
     text-align: center;
-    /* margin-top: -8px; */
 }
 .place1{
     text-align: center;
@@ -179,8 +189,10 @@
     position: relative;
 }
 .content3 h2{
+    font-family: 'Agrandir', sans-serif;
     color: black;
     font-weight: 900;
+    font-size: 35px;
 }
 .content3 h4{
     color: black;
@@ -201,6 +213,7 @@
     color: white;
     font-weight: 900;
     font-size: 50px;
+    font-family: 'Agrandir', sans-serif;
 }
 .content4 h4{
     color: white;
@@ -273,9 +286,10 @@
     text-align: center;
 }
 .content6 h1{
+    font-family: 'Agrandir', sans-serif;
     color: white;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 40px;
 }
 .content6 h4{
     color: white;
@@ -298,7 +312,7 @@
     justify-content: center;
 }
 .logo2 h3{
-    font-family: 'Seaweed Script', cursive;
+    font-family: 'Andasia', sans-serif;
     color: white;
 }
 .logo2 img{
@@ -334,9 +348,10 @@
     padding: 180px 0px 150px 0px;
 }
 .content8 h1{
+    font-family: 'Agrandir', sans-serif;
     color: white;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
 }
 .building h3{
@@ -354,9 +369,9 @@
 .hair h1{
     color: black;
     font-weight: 900;
-    font-size: 45px;
+    font-size: 40px;
     margin: 500px 0px 10px 50px;
-    font-family: 'Andasia', Arial, sans-serif;
+    font-family: 'Agrandir', sans-serif;
     position: relative;
 }
 .hair h3{
@@ -376,8 +391,9 @@
 .content8 h1{
     color: white;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
+    font-family: 'Agrandir', sans-serif;
 }
 .good h3{
     text-align: center;
@@ -398,6 +414,7 @@
     margin: 750px 0px 30px 0px;
     text-align: center;
     position: relative;
+    font-family: 'Agrandir', sans-serif;
 }
 .land h3 span{
     color: black;
@@ -427,7 +444,7 @@
     justify-content: flex-end;
 }
 .logo1 h3{
-    font-family: 'Seaweed Script', cursive;
+    font-family: 'Andasia', sans-serif;
     color: white;
     font-size: 50px;
 }
@@ -442,8 +459,8 @@
 .content12 h2{
     color: white;
     font-weight: 900;
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-family: 'Agrandir', sans-serif;
+    font-size: 40px;
     line-height: 50px;
 }
 .content12 h5{
@@ -539,5 +556,11 @@
     }
     .market p{
         font-size: 30px;
+    }
+}
+
+@media (max-width:1200px) {
+    .content3 h2{
+        font-size: 27px;
     }
 }
